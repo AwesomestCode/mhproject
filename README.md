@@ -1,2 +1,2 @@
 # mhproject
-Marshall Islands
+Marshall Islands project for my school class.
