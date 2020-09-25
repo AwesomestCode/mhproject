@@ -16,8 +16,13 @@
 
 # Place
 * Resources: coconuts, tomatoes, melons, taro, breadfruit, fruits; pigs, chickens (CIA)
+* > the land and the sea, elements which have provided them daily sustenance
+  (quote from Marshall Islands US Embassy).
 * copra, tuna processing, tourism, craft items (from seashells, wood, and pearls) (CIA)
 * Protestant 80.5% (United Church of Christ 47%, Assembly of God 16.2%, Bukot Nan Jesus 5.4%, Full Gospel 3.3%, Reformed Congressional Church 3%, Salvation Army 1.9%, Seventh Day Adventist 1.4%, Meram in Jesus 1.2%, other Protestant 1.1%), Roman Catholic 8.5%, Mormon 7%, Jehovah's Witness 1.7%,  other 1.2%, none 1.1% (2011 est.) (CIA)
+* plentiful wildlife:
+  > Marine Turtles: All five of the world's species of marine turtles have been found in the Marshall Islands, two of which nest in the islands.
+  (source: RMI Embassy to the USA)
 * Marshallese 92.1%, mixed Marshallese 5.9%, other 2% (2006) (CIA)
 
 # Human Environment Interaction
@@ -27,8 +32,12 @@
 Tourism seems to be quite the thing. (CIA)
 
 # Transportation
+## Physical Transportation
 * 15 airports as of 2013, 4 paved, 11 unpaved. (CIA)
 * Many seaports: Enitwetak Island, Kwajalein, Majuro (CIA)
+## Communications
+* No TV Station (CIA)
+* Note that it hosts a major ground GPS antenna.
 
 # Region
 * Oceania
