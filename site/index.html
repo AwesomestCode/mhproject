@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Lato|Amiri|Exo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="custom.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				scroll-behavior: smooth;
+			}
+
+			.white {
+				background-color: #F0F0F0;
+			}
+
+			.gray {
+				background-color: #E8E8E8;
+			}
+
+			h2 {
+				margin: 32px;
+				font-family: Amiri;
+				font-size: 48pt;
+				color: #000033;
+				text-align: center;
+			}
+
+			h1 {
+				display: inline; font-size: 75pt
+			}
+
+			p {
+				font-family: Exo;
+				font-size: 12pt;
+				text-align: center;
+				padding: 0 256px;
+			}
+			h2:after {
+				background: none repeat scroll 0 0 #888;
+				margin: 0 auto;
+				bottom: -10px;
+				content: "";
+				display: block;
+				height: 10px;
+				width: 100px;
+			}
+
+			div {
+				padding: 128px 0;
+			}
+			.contactlink:link {
+				color: black;
+			}
+			#fullhead {
+				margin: 0;
+				padding: 0;
+				background-image: url(assets/bg1.png);
+				background-attachment: fixed;
+				width: 100%;
+				height: 100vh;
+				background-size: cover;
+				font-family: Lato;
+				text-align: center;
+				color: white; 
+			}
+			#vertical {
+				display: block;
+				padding: 20%;
+			}
+			.navigation {
+			 	background: #000033;
+			 	padding: 16px 0px;
+			 	width: 100%;
+			 	list-style-type: none;
+			 	margin: 0;
+ 			} 
+ 			.navbutton {
+			 	margin: 16px;
+			 	list-style-type: none;
+			 	page-break-after: none;
+			 	page-break-before: none;
+			 	font-size: 16pt;
+			 	font-family: Lato;
+ 			}
+
+ 			.sticky {
+		    	position: sticky;
+		    	top: 0;
+			}
+
+			.portrait {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 20%;
+				height: 20%;
+				margin-top: 50px;
+			}
+
+			.portraitwrapper {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 20%;
+				height: 20%;
+				margin-top: 50px;
+			}
+
+			.portrait:hover {
+				transition: transform .3s;
+				transform: scale(1.1);
+			}
+			.name {
+				margin: 24px 0 64px 0;
+				font-family: Amiri;
+				font-size: 16pt;
+				color: #003;
+				text-align: center;
+			}
+			#footer {
+				background-color: #003;
+				color: white;
+			}
+			@media only screen and (max-width: 900px) {
+				h1 {
+					font-size: 32pt;
+				}
+
+				h2 {
+					font-size: 32pt;
+				}
+				h3 {
+					font-size: 16pt;
+				}
+				p,div,span {
+					padding: 10px;
+				}
+				.portrait {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
+					height: 50%;
+					margin-top: 50px;
+				}
+				#fullhead, #vertical {
+					background-image: url(assets/bg1mobile.png);
+					height: auto;
+				}
+
+				.portrait:hover {
+					transition: transform .3s;
+					transform: none;
+				}
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="fullhead">
+			<span id="vertical">
+				<h1>The Marshall Islands</h1>
+				<h3>An idyllic landscape.</h3>
+			</span>
+		</div>
+		<div class="navigation sticky">
+			<span class="navbutton"><a class="navlink" href="mailto:info@redacted">Contact</a></span>
+			<span class="navbutton"><a class="navlink" href="career.html">Careers</a></span>
+			<span class="navbutton"><a class="navlink" href="login.html">LP Login</a></span>
+			<span class="navbutton"><a class="navlink" href="#about">About</a></span>
+			<span class="navbutton"><a class="navlink" href="#management">Management Team</a></span>
+		</div>
+		<div id="about" class="white">
+			<h2>The Firm</h2>
+			<p>
+				Redacted founded by veteran senior executives in real estate,  finance, and investment technology. The company aims at revolutionizing the investment process in investing in real estate related products using modern technologies.
+			</p>
+		</div>
+		<div id="management" class="gray">
+			<h2>Management Team</h2>
+			<p>
+				Lorem ipsum.
+			</p>
+			<span id="portraitwrapper">
+			<span class="">
+				
+			<span>
+		</div>
+		<div id="contact" class="white">
+			<h2>Contact</h2>
+			<p>
+				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+			</p>
+		</div>
+		<div id="footer">
+			<p>Copyright &copy; Redacted LLC 2020. All rights reserved.</p>
+		</div>
+	</body>
+</html>
