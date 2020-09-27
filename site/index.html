@@ -12,11 +12,12 @@
 			}
 
 			.white {
-				background-color: #F0F0F0;
+				background-color: #F8F8F8;
 			}
 
 			.gray {
 				background-color: #E8E8E8;
+				filter: drop-shadow(0 0 0.5rem rgba(128, 128, 128, 0.5));
 			}
 
 			h2 {
@@ -56,7 +57,7 @@
 			#fullhead {
 				margin: 0;
 				padding: 0;
-				background-image: linear-gradient(135deg, rgba(31, 31, 0, 0.25), rgba(0, 0, 0, 0.75)), url(assets/Flag_of_the_Marshall_Islands.svg);
+				background-image: linear-gradient(135deg, rgba(255, 255, 127, 0.0625), rgba(0, 0, 0, 0.5)), url(assets/Flag_of_the_Marshall_Islands.svg);
 				background-attachment: fixed;
 				background-size: 2;
 				width: 100%;
@@ -76,11 +77,13 @@
 				z-index: 1;
 			}
 			.navigation {
-			 	background: #000033;
+			 	background: rgba(4, 56, 148, 0.6);
+			 	backdrop-filter: blur(16px);
 			 	padding: 16px 0px;
 			 	width: 100%;
 			 	list-style-type: none;
 			 	margin: 0;
+			 	filter: drop-shadow(0 0 1rem rgba(4, 56, 148, 0.95));
  			} 
  			.navbutton {
 			 	margin: 16px;
@@ -133,8 +136,10 @@
 				text-align: center;
 			}
 			#footer {
-				background-color: #003;
 				color: white;
+				background: rgba(4, 56, 148, 0.6);
+			 	backdrop-filter: blur(16px);
+			 	filter: drop-shadow(0 0 0.75rem rgba(4, 56, 148, 0.95));
 			}
 			#scroll {
 				position: absolute;
@@ -156,6 +161,7 @@
 					font-size: 32pt;
 				}
 				h3 {
+					display: none;
 					font-size: 16pt;
 				}
 				p,div,span {
@@ -193,7 +199,7 @@
 			<span class="navseparator">•</span>
 			<span class="navbutton"><a class="navlink" href="#location">Location</a></span>
 			<span class="navseparator">•</span>
-			<span class="navbutton"><a class="navlink" href="#hei">HEI</a></span>
+			<span class="navbutton"><a class="navlink" href="#hei">Human Environment Interaction</a></span>
 			<span class="navseparator">•</span>
 			<span class="navbutton"><a class="navlink" href="#transportation">Transportation</a></span>
 			<span class="navseparator">•</span>
@@ -206,35 +212,36 @@
 			<p>
 				The Marshall Islands is an idyllic landscape in the middle of the Pacific Ocean. It is located in Oceania.
 			</p>
+			<img src="https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
 		</div>
 		<div id="location" class="gray">
-			<h2>Management Team</h2>
+			<h2>Location</h2>
 			<p>
 				Lorem ipsum.
 			</p>
 		</div>
 		<div id="hei" class="white">
-			<h2>Contact</h2>
+			<h2>Human Environment Interactino</h2>
 			<p>
-				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+				Humans interact with the Marshall Islands.
 			</p>
 		</div>
 		<div id="transportation" class="gray">
-			<h2>Contact</h2>
+			<h2>Transportation</h2>
 			<p>
-				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+				Things get transported in the Marshall Islands.
 			</p>
 		</div>
 		<div id="region" class="white">
-			<h2>Contact</h2>
+			<h2>Region</h2>
 			<p>
-				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+				The Marshall Islands is within the observable universe.
 			</p>
 		</div>
 		<div id="gallery" class="gray">
-			<h2>Contact</h2>
+			<h2>Image Gallery</h2>
 			<p>
-				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+				Here are some images.
 			</p>
 		</div>
 		<div id="footer">
