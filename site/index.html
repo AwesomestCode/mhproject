@@ -56,18 +56,23 @@
 			#fullhead {
 				margin: 0;
 				padding: 0;
-				background-image: url(assets/bg1.png);
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/Flag_of_the_Marshall_Islands.svg);
 				background-attachment: fixed;
 				width: 100%;
 				height: 100vh;
 				background-size: cover;
 				font-family: Lato;
-				text-align: center;
-				color: white; 
+				color: white;
+				position:relative;
 			}
 			#vertical {
+				position: absolute;
 				display: block;
-				padding: 20%;
+				text-align: right;
+				bottom: 0;
+				right: 0;
+				padding: 10% 5%;
+				z-index: 1;
 			}
 			.navigation {
 			 	background: #000033;
@@ -123,6 +128,15 @@
 				background-color: #003;
 				color: white;
 			}
+			#scroll {
+				position: absolute;
+				display: block;
+				size: 10px;
+				bottom: 0;
+				margin-left: 47.5%;
+				margin-right: auto;
+				width: 5%;
+			}
 			@media only screen and (max-width: 900px) {
 				h1 {
 					font-size: 32pt;
@@ -164,6 +178,7 @@
 				<h1>The Marshall Islands</h1>
 				<h3>An idyllic landscape.</h3>
 			</span>
+			<img id="scroll" src="assets/scrolldownicon.gif">
 		</div>
 		<div class="navigation sticky">
 			<span class="navbutton"><a class="navlink" href="mailto:info@redacted">Contact</a></span>
