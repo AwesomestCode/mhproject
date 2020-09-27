@@ -89,7 +89,14 @@
 			 	font-size: 16pt;
 			 	font-family: Lato;
  			}
-
+ 			.navseparator {
+				bottom: -10px;
+				color: #fff;
+				text-align: center;
+				content: "•";
+				height: 10px;
+				font-size: 20pt;
+			}
  			.sticky {
 		    	position: sticky;
 		    	top: 0;
@@ -136,6 +143,8 @@
 				margin-left: 47.5%;
 				margin-right: auto;
 				width: 5%;
+				filter: brightness(150%);
+				z-index: 10;
 			}
 			@media only screen and (max-width: 900px) {
 				h1 {
@@ -178,32 +187,52 @@
 				<h1>The Marshall Islands</h1>
 				<h3>An idyllic landscape.</h3>
 			</span>
-			<img id="scroll" src="assets/scrolldownicon.gif">
+			<a href="#general"><img id="scroll" src="assets/scrolldownicon.gif"></a>
 		</div>
 		<div class="navigation sticky">
-			<span class="navbutton"><a class="navlink" href="mailto:info@redacted">Contact</a></span>
-			<span class="navbutton"><a class="navlink" href="career.html">Careers</a></span>
-			<span class="navbutton"><a class="navlink" href="login.html">LP Login</a></span>
-			<span class="navbutton"><a class="navlink" href="#about">About</a></span>
-			<span class="navbutton"><a class="navlink" href="#management">Management Team</a></span>
+			<span class="navbutton"><a class="navlink" href="#general">General</a></span>
+			<span class="navseparator">•</span>
+			<span class="navbutton"><a class="navlink" href="#location">Location</a></span>
+			<span class="navseparator">•</span>
+			<span class="navbutton"><a class="navlink" href="#hei">HEI</a></span>
+			<span class="navseparator">•</span>
+			<span class="navbutton"><a class="navlink" href="#transportation">Transportation</a></span>
+			<span class="navseparator">•</span>
+			<span class="navbutton"><a class="navlink" href="#region">Region</a></span>
+			<span class="navseparator">•</span>
+			<span class="navbutton"><a class="navlink" href="#gallery">Gallery</a></span>
 		</div>
-		<div id="about" class="white">
-			<h2>The Firm</h2>
+		<div id="general" class="white">
+			<h2>General</h2>
 			<p>
-				Redacted founded by veteran senior executives in real estate,  finance, and investment technology. The company aims at revolutionizing the investment process in investing in real estate related products using modern technologies.
+				The Marshall Islands is an idyllic landscape in the middle of the Pacific Ocean. It is located in Oceania.
 			</p>
 		</div>
-		<div id="management" class="gray">
+		<div id="location" class="gray">
 			<h2>Management Team</h2>
 			<p>
 				Lorem ipsum.
 			</p>
-			<span id="portraitwrapper">
-			<span class="">
-				
-			<span>
 		</div>
-		<div id="contact" class="white">
+		<div id="hei" class="white">
+			<h2>Contact</h2>
+			<p>
+				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+			</p>
+		</div>
+		<div id="transportation" class="gray">
+			<h2>Contact</h2>
+			<p>
+				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+			</p>
+		</div>
+		<div id="region" class="white">
+			<h2>Contact</h2>
+			<p>
+				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
+			</p>
+		</div>
+		<div id="gallery" class="gray">
 			<h2>Contact</h2>
 			<p>
 				Contact us at <a class="contactlink" href="mailto:info@example.com">info@redacted</a> if you have any additional concerns or questions.
