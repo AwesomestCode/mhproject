@@ -57,7 +57,7 @@
 			}
 
 			div.text {
-				padding: 128px 0;
+				padding: 64px 0;
 			}
 
 			#carousel-wrapper-outer {
@@ -149,30 +149,20 @@
 			.center {
 				text-align: center;
 			}
-			@media only screen and (max-width: 900px) {
-				h1 {
-					font-size: 32pt;
+			
+			@media only screen and (max-width: 1000px) {
+				*:not(.mobile) {
+					visibility: hidden;
+				}
+				.mobile {
+					visibility: visible;
+					display: block; !important
 				}
 
-				h2 {
-					font-size: 32pt;
-				}
-				h3 {
-					display: none;
-					font-size: 16pt;
-				}
-				p,div:not([class*="carousel"]),span {
-					padding: 10px;
-				}
-
-				#fullhead, #vertical {
-					height: 37.5%;
-					width: 100%;
-					background-attachment: scroll;
-				}
-
-				#scroll {
-					display: none;
+			}
+			@media only screen and (min-width: 1000px) {
+				.mobile {
+					display: none; 
 				}
 
 			}
@@ -187,6 +177,8 @@
 				margin: 5rem;
 				z-index: 5;
 				transition: 0.2s;
+				max-height: 24rem;
+				max-width: 36rem;
 			}
 			img.side-img:hover {
 				transition: 0.5s;
@@ -199,6 +191,7 @@
 		</style>
 	</head>
 	<body>
+		<p class="mobile" style="color: red;">Looks like you're using a mobile device or a really small screen. Due to issues with formatting, I've set a constraint that the screen size must be at least 1000 CSS pixels wide.</p>
 		<div id="fullhead">
 			<span id="vertical">
 				<h1>The Marshall Islands</h1>
@@ -225,77 +218,93 @@
 				<table>
 					<tr>
 						<td>
-							<p class="sidetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus convallis nunc non fermentum. Nulla sit amet augue et mi blandit blandit. Duis pharetra, est malesuada dictum luctus, velit velit imperdiet eros, eu rutrum ex purus vitae diam. Cras enim tortor, fringilla sed sem at, efficitur posuere felis. Aenean sapien erat, interdum rhoncus ultricies vitae, aliquam in dui. Nullam blandit nisl at lectus posuere ullamcorper. In eleifend ac ipsum maximus sodales. Curabitur elit ligula, pulvinar id placerat sed, commodo ac sem. Donec tincidunt vehicula elit non euismod. In sit amet augue ut tortor auctor vulputate et vel diam. Morbi aliquet purus vitae consequat lacinia. Fusce imperdiet felis nec lacinia molestie.</p>
+							<p class="sidetext">The Marshall Islands is a tiny island nation situated in the Pacific Ocean. Formerly admistered by the US government, as of 1986 it is an independent country. It has been both a World War II battleground and a nuclear test site. Out of all UN recognized countries, it has the highest water to land ratio.</p>
 						</td>
 						<td>
-							<img class="side-img" src="https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045__340.png">
+							<img class="side-img" src="assets/general-side.jpg">
 						</td>
 					</tr>
 				</table>
 			</div>
 		</div>
-		<div id="location" class="gray text ">
+		<div id="location" class="gray text">
 			<h2>Location</h2>
 			<div class="tablewrapper">
 				<table>
 					<tr>
 						<td>
-							<img class="side-img" src="https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045__340.png">
+							<img class="side-img" src="assets/location-side.jpg">
 						</td>
 						<td>
-							<p class="sidetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus convallis nunc non fermentum. Nulla sit amet augue et mi blandit blandit. Duis pharetra, est malesuada dictum luctus, velit velit imperdiet eros, eu rutrum ex purus vitae diam. Cras enim tortor, fringilla sed sem at, efficitur posuere felis. Aenean sapien erat, interdum rhoncus ultricies vitae, aliquam in dui. Nullam blandit nisl at lectus posuere ullamcorper. In eleifend ac ipsum maximus sodales. Curabitur elit ligula, pulvinar id placerat sed, commodo ac sem. Donec tincidunt vehicula elit non euismod. In sit amet augue ut tortor auctor vulputate et vel diam. Morbi aliquet purus vitae consequat lacinia. Fusce imperdiet felis nec lacinia molestie.</p>
+							<p class="sidetext">The Marshall Island's relative location is halfway between Australia and Hawaii. It's slightly west of the international date line in global terms (it's still several hundred miles, a lot in human terms), making it among the first countries in the world to experience a new day with a time zone of GMT+12 (though that's only symbolic, as the international date line has no scientific significance). On the absolute side, it's located at 7.08971ºN, 171.38027ºE. The Marshall Islands also helps the rest of the world find their location—Kwajalein Atoll hosts one of the four dedicated ground antennas for the world's GPS system.</p>
 						</td>
 					</tr>
 				</table>
 			</div>
 		</div>
-		<div id="hei" class="white text">
+		<div id="general" class="white text">
+			<h2>Place</h2>
+			<div class="tablewrapper">
+				<table>
+					<tr>
+						<td>
+							<p class="sidetext">The Marshall Islands has several natural resources. It produces the commodities of coconuts, tomatoes, melons, taro, breadfruit, pigs, and chickens. Industries there are also numerous: people there process coconuts and tuna fish; tourism is also a factor of income; and making craft items, especially those that use materials that originate from the sea such as sea shells and pearls, is also a way of life for many there. The underwoods in coconut plantations have also been used as grazing areas for several species of animals; however, livestock usage has since declined. As many island nations have it, the Marshall Islands also relies heavily on the sea, which has for many years provided its residence with their meals. Wildlife there is also plentiful, all five species of marine turtles are present in the Marshall Islands.</p>
+							<p class="sidetext"> The people there are also of diverse religious backgrounds, though Protestants form a large majority making up over 2 in 5 people. Roman Catholics then make up the next largest sect, forming around 8.5% of the populations. The same diversity, however, could not be said about ethnicity there. 92% of the people there are Marshallese, and 5.9% are mixed Marshallese. Only about 1 in 50 people do not belong to either of those ethnic groups.</p>
+						</td>
+						<td>
+							<img class="side-img" src="assets/place-side.jpg">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="hei" class="gray text">
 			<h2>Human Environment Interaction</h2>
 			<div class="tablewrapper">
 				<table>
 					<tr>
 						<td>
-							<p class="sidetext">Humans exist. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus convallis nunc non fermentum. Nulla sit amet augue et mi blandit blandit. Duis pharetra, est malesuada dictum luctus, velit velit imperdiet eros, eu rutrum ex purus vitae diam. Cras enim tortor, fringilla sed sem at, efficitur posuere felis. Aenean sapien erat, interdum rhoncus ultricies vitae, aliquam in dui. Nullam blandit nisl at lectus posuere ullamcorper. In eleifend ac ipsum maximus sodales. Curabitur elit ligula, pulvinar id placerat sed, commodo ac sem. Donec tincidunt vehicula elit non euismod. In sit amet augue ut tortor auctor vulputate et vel diam. Morbi aliquet purus vitae consequat lacinia. Fusce imperdiet felis nec lacinia molestie.</p>
+							<p class="sidetext">The Marshall Islands are a prominent place used in war. Kwajalein Atoll is a famous World War II battle site. It has since also remained a military area—it is still a US missile test range. Before, when it was still administrated by the US, some isles were used for nuclear tests—67 of them. Because of the lasting damage caused by the USA's nuclear testing, the US continues to pay the Marshall Islands compensation. This military tie to the US also may be a reason that, to this day, the Marshall Islands still rely on the US for defense.</p>
 						</td>
 						<td>
-							<img class="side-img" src="https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045__340.png">
+							<img class="side-img" src="assets/hei-side.jpg">
 						</td>
 					</tr>
 				</table>
 			</div>
 		</div>
-		<div id="transportation" class="gray text">
+		<div id="transportation" class="white text">
 			<h2>Transportation</h2>
 			<div class="tablewrapper">
 				<table>
 					<tr>
 						<td>
-							<img class="side-img" src="https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045__340.png">
+							<img class="side-img" src="assets/transportation-side.jpg">
 						</td>
 						<td>
-							<p class="sidetext">People move. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus convallis nunc non fermentum. Nulla sit amet augue et mi blandit blandit. Duis pharetra, est malesuada dictum luctus, velit velit imperdiet eros, eu rutrum ex purus vitae diam. Cras enim tortor, fringilla sed sem at, efficitur posuere felis. Aenean sapien erat, interdum rhoncus ultricies vitae, aliquam in dui. Nullam blandit nisl at lectus posuere ullamcorper. In eleifend ac ipsum maximus sodales. Curabitur elit ligula, pulvinar id placerat sed, commodo ac sem. Donec tincidunt vehicula elit non euismod. In sit amet augue ut tortor auctor vulputate et vel diam. Morbi aliquet purus vitae consequat lacinia. Fusce imperdiet felis nec lacinia molestie.</p>
+							<p class="sidetext">The Marshall Islands hosts 15 airports. Of the airports, only 4 of them have paved runways, showing the isolation of this tiny country. The other 11 only have unpaved runways. The Marshall Islands has several seaports, with ones on Majuro Atoll, Kwajalain Atoll, and Enitwetak Island. Communication to the outermost islands is radio-only. Unlike many other countries, it does not have any local TV stations.</p>
 						</td>
 					</tr>
 				</table>
 			</div>
 		</div>
-		<div id="region" class="white text">
+		<div id="region" class="gray text">
 			<h2>Region</h2>
 			<div class="tablewrapper">
 				<table>
 					<tr>
 						<td>
-							<p class="sidetext">It's somewhere in the observable universe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus convallis nunc non fermentum. Nulla sit amet augue et mi blandit blandit. Duis pharetra, est malesuada dictum luctus, velit velit imperdiet eros, eu rutrum ex purus vitae diam. Cras enim tortor, fringilla sed sem at, efficitur posuere felis. Aenean sapien erat, interdum rhoncus ultricies vitae, aliquam in dui. Nullam blandit nisl at lectus posuere ullamcorper. In eleifend ac ipsum maximus sodales. Curabitur elit ligula, pulvinar id placerat sed, commodo ac sem. Donec tincidunt vehicula elit non euismod. In sit amet augue ut tortor auctor vulputate et vel diam. Morbi aliquet purus vitae consequat lacinia. Fusce imperdiet felis nec lacinia molestie.</p>
+							<p class="sidetext">The Marshall Islands is located in Oceania (a region within the Pacific Ocean, the world's largest ocean), which includes (but is not limited to) Australia, New Zealand, Fiji, Guam, and several other island countries. It's also in the tropics, as its latitude is only 7 degrees north from the equator.</p>
 						</td>
 						<td>
-							<img class="side-img" src="https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045__340.png">
+							<img class="side-img" src="assets/region-side.jpg">
 						</td>
 					</tr>
 				</table>
 			</div>
 		</div>
-		<div id="gallery" class="gray">
-			<h2>Image Gallery</h2>
+		<div id="gallery" class="white">
+			<h2>Gallery & Maps</h2>
 			<p class="center">Here are some images.</p>
 			<div id="carousel-wrapper-outer">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -306,10 +315,10 @@
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045__340.png" alt="First slide">
+							<iframe class="w-100" width="560" height="500" src="https://www.youtube-nocookie.com/embed/3J06af5xHD0?start=50" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 							<div class="carousel-caption d-none d-md-block">
-								<h5>A Random Image</h5>
-								<p>I found this off of the internet.</p>
+								<h5>A Documentary</h5>
+								<p>This is a really good documentary that was one of the reasons I chose the Marshall Islands.</p>
 							</div>
 						</div>
 						<div class="carousel-item">
