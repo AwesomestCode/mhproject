@@ -8,6 +8,7 @@
 * https://www.imf.org/external/pubs/ft/weo/2019/01/weodata/weorept.aspx?pr.x=81&pr.y=11&sy=2017&ey=2024&scsm=1&ssd=1&sort=country&ds=.&br=1&c=867&s=NGDPD,PPPGDP,NGDPDPC,PPPPC&grp=0&a=
 * https://web.archive.org/web/20131115173707/http://rmiembassyus.org/Geography.htm
 * https://www.un.int/marshallislands/
+* gps.gov/systems/gps/control/
 
 # Location
 * 7.08971, 171.38027 (source: https://latitudelongitude.org/mh/majuro/)
